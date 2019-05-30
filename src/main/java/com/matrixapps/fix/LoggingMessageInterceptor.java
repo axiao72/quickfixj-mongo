@@ -6,7 +6,7 @@ import quickfix.*;
 
 public abstract class LoggingMessageInterceptor extends MessageCracker implements quickfix.Application {
 
-    final Logger log = LoggerFactory.getLogger("message.interceptor");
+    protected final Logger log = LoggerFactory.getLogger("message.interceptor");
 
     @Override
     public void onCreate(SessionID sessionId) {
