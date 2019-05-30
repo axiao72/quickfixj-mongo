@@ -4,6 +4,7 @@ HELP.md
 /**/*.log
 logs
 /build/
+/fix/
 /*/out/
 /*/temp/
 
