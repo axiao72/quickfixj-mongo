@@ -4,7 +4,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import quickfix.*;
 
-public abstract class LoggingMessageInterceptor extends MessageCracker implements quickfix.Application {
+public abstract class
+LoggingMessageInterceptor extends MessageCracker implements quickfix.Application {
 
     protected final Logger log = LoggerFactory.getLogger("message.interceptor");
 
@@ -40,6 +41,6 @@ public abstract class LoggingMessageInterceptor extends MessageCracker implement
 
     @Override
     public void fromApp(Message message, SessionID sessionId) throws FieldNotFound, IncorrectDataFormat, IncorrectTagValue, UnsupportedMessageType {
-        log.info("fromApp " + message.getClass().getSimpleName());
+        log.info("fromApp " + message.getClass().getSimpleName() + " test!");
     }
 }
